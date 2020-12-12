@@ -8,7 +8,6 @@ const port = 3001;
 
 app.get('/', (req, res) => {
     const content = renderToString(<Home />);
-console.log('test');
     res.send(content);
 });
 
