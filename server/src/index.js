@@ -7,7 +7,7 @@ const port = 3001;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.send(renderer());
+    res.send(renderer(req));
 });
 
 app.listen(port, () => {
