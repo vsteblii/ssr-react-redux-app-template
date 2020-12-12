@@ -6,13 +6,14 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 import Routes from './Routes';
+import reducers from './reducers';
 
 const middlewares = [thunk];
 if (DEVELOPMENT) {
     middlewares.push(createLogger());
 }
 
-const store = createStore(reducers, {}, applyMiddleware(middlewares));
+const store = createStore(reducers, {}, applyMiddleware(...middlewares));
 
 ReactDOM.hydrate(
     <Provider store={store}>

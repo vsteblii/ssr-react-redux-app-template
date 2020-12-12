@@ -1,5 +1,6 @@
 import express from 'express';
 import renderer from './helpers/renderer';
+import createStore from './helpers/createStore';
 
 const app = express();
 const port = 3001;
@@ -7,7 +8,8 @@ const port = 3001;
 app.use(express.static('public'));
 
 app.get('*', (req, res) => {
-    res.send(renderer(req));
+    const store = createStore();
+    res.send(renderer(req, store));
 });
 
 app.listen(port, () => {
