@@ -1,3 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import Home from './components/Home';
 
-console.log('hi');
+ReactDOM.hydrate(<Home />, document.getElementById('root'));
