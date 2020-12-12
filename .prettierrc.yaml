@@ -1,0 +1,21 @@
+printWidth: 120
+overrides:
+  - files:
+      - "*.css"
+      - "*.scss"
+      - "*.less"
+      - "*.overrides"
+      - "*.variables"
+    options:
+      tabWidth: 4
+      singleQuote: true
+  - files:
+      - "*.ts"
+      - "*.tsx"
+      - "*.jsx"
+    options:
+      tabWidth: 4
+      singleQuote: true
+      jsxSingleQuote: true
+      printWidth: 120
+      proseWrap: "never"
