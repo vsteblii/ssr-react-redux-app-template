@@ -11,3 +11,4 @@ Styled Components
 Configure docker container for server
 Configure Nginx to serve just some pages
 Progressive Web App!
+Create Production and Dev verions of webpack and all of scripts
