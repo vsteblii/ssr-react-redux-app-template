@@ -15,7 +15,7 @@ if (DEVELOPMENT) {
     middlewares.push(createLogger());
 }
 
-const store = createStore(reducers, {}, applyMiddleware(...middlewares));
+const store = createStore(reducers, window.INITIAL_STATE || {}, applyMiddleware(...middlewares));
 
 ReactDOM.hydrate(
     <Provider store={store}>

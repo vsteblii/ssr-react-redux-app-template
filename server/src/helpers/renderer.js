@@ -14,11 +14,17 @@ export default (req, store) => {
             </StaticRouter>
         </Provider>
     );
+
+    const stateString = JSON.stringify(store.getState());
+
     return `
         <html>
             <head></head>
             <body>
                 <div id="root">${content}</div>
+                <script>
+                    window.INITIAL_STATE=JSON.parse('${stateString}');
+                </script>
                 <script src="bundle.js"></script>
             </body>
         </html>
