@@ -15,3 +15,4 @@ Errors handling on client and server
 Add sentry support
 Use redux-saga instead of thunk
 Add storybook for basic react components
+Update React router version
