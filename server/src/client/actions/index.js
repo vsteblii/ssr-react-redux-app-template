@@ -1,9 +1,9 @@
-import axios from 'axios';
+import axios from '../../helpers/request';
 
 export const FETCH_USERS = 'fetch_users';
 
 export const fetchUsers = () => async dispatch => {
-    const res = await axios.get('https://jsonplaceholder.typicode.com/users');
+    const res = await axios.get('https://dummyapi.io/data/api/user?limit=10');
 
     dispatch({
         type: FETCH_USERS,
