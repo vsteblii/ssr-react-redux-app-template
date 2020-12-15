@@ -1,5 +1,5 @@
 import React from 'react';
-import UsersList from './UsersList';
+import UsersList from './UsersListPage';
 
 const Home = () => {
     return (
@@ -10,4 +10,6 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default {
+    component: Home,
+}

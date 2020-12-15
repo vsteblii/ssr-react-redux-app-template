@@ -26,4 +26,7 @@ const UsersList = () => {
     );
 };
 
-export default UsersList;
+export default {
+    component: UsersList,
+    loadData,
+}
