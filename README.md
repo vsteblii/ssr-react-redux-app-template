@@ -16,3 +16,5 @@ Add sentry support
 Use redux-saga instead of thunk
 Add storybook for basic react components
 Update React router version
+Use JWT token -> transfer with coookies
+SECURITY checks
