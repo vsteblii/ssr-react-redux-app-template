@@ -7,6 +7,7 @@ import Routes from '../client/Routes';
 import serialize from 'serialize-javascript';
 
 export default (req, store) => {
+    // const content = '';
     const content = renderToString(
         <Provider store={store}>
             <StaticRouter location={req.path} context={{}}>

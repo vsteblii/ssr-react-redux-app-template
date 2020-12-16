@@ -1,7 +1,13 @@
 import axios from 'axios';
+import getConfig from '../config';
 
-export default axios.create({
-  headers: {
-    'app-id': '5fd8b4a165761215b141b146',
-  },
-});
+const createInstance = (req) => {
+    return axios.create({
+        baseURL: `${getConfig('API_URL')}`,
+        headers: {
+            cookies: req.get('cookies') || '',
+        }
+    });
+};
+
+export default createInstance;

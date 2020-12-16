@@ -9,8 +9,9 @@ import { createLogger } from 'redux-logger';
 import { renderRoutes } from 'react-router-config';
 import Routes from './Routes';
 import reducers from './reducers';
+import requestInstance from './helpers/request';
 
-const middlewares = [thunk];
+const middlewares = [thunk.withExtraArgument(requestInstance)];
 if (DEVELOPMENT) {
     middlewares.push(createLogger());
 }
