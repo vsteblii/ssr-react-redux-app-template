@@ -11,7 +11,7 @@ if (env.NODE_ENV === "test") {
 const DEFAULT_API_URL = 'https://scratchmymap.com';
 const configurations = {
   DEV: {
-    API_URL: env.NODE_API_URL || DEFAULT_API_URL,
+    API_URL: env.NODE_API_URL || 'http://localhost',
   },
   TEST: {
     API_URL: env.NODE_API_URL || DEFAULT_API_URL,

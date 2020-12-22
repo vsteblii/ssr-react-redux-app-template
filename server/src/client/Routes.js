@@ -1,14 +1,24 @@
+import App from './app';
 import HomePage from './pages/HomePage';
-import UsersListPage, { loadData as loadUsersData } from './pages/UsersListPage';
+import UsersListPage from './pages/UsersListPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 export default [
     {
-        ...HomePage,
-        path: '/',
-        exact: true,
-    },
-    {
-        ...UsersListPage,
-        path: '/users',
+        ...App,
+        routes: [
+            {
+                ...HomePage,
+                path: '/',
+                exact: true,
+            },
+            {
+                ...UsersListPage,
+                path: '/users',
+            },
+            {
+                ...NotFoundPage,
+            }
+        ]
     }
 ];
