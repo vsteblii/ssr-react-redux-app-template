@@ -25,3 +25,4 @@ overrides:
           jsxSingleQuote: true
           printWidth: 120
           proseWrap: "never"
+          arrowParens: "always"
