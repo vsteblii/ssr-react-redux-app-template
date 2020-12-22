@@ -18,3 +18,5 @@ Add storybook for basic react components
 Update React router version
 Use JWT token -> transfer with coookies
 SECURITY checks
+Components Dynamic import
+Helmet -> meta tags
