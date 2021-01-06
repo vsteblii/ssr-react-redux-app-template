@@ -7,6 +7,7 @@ Move server code to TS
 Translations
 Redux on front and on server
 Styled Components
+Ignore styles on server side
 Configure docker container for server
 Configure Nginx to serve just some pages
 Progressive Web App!
