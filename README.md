@@ -20,3 +20,4 @@ Use JWT token -> transfer with coookies
 SECURITY checks
 Components Dynamic import
 Helmet -> meta tags
+renderToNodeStream ? -> check if it will work with redirects and page status handling
