@@ -6,7 +6,7 @@ const createInstance = (req) => {
         baseURL: `${getConfig('API_URL')}`,
         headers: {
             cookies: req.get('cookies') || '',
-        }
+        },
     });
 };
 
