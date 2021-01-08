@@ -1,0 +1,11 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.tsx": "typescriptreact"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.fontSize": 13,
+  "files.insertFinalNewline": true
+}
