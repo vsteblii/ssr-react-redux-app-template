@@ -22,3 +22,4 @@ SECURITY checks
 Components Dynamic import
 Helmet -> meta tags
 renderToNodeStream ? -> check if it will work with redirects and page status handling
+Code Spliting -> https://github.com/jamiebuilds/react-loadable
